@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outer{
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: rgb(12, 11, 11);
+    animation: annimate 60s linear 0s infinite forwards;
+    /* border: 1px solid rgb(0, 0, 0); */
+  
+}
+.logo{
+    /* position: sticky; */
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    animation: annimate-3 60s linear 0s infinite forwards;
+}
+
+.logo img{
+    width:100%;
+    margin: 0 auto;
+}
+
+@keyframes annimate {
+    from{
+        transform: 
+        rotate(-360deg);
+    }
+}
+@keyframes annimate-3 {
+    from{
+        transform: 
+        rotate(360deg);
+    }
+}
+
+.boundry{
+    content: "";
+}
+.inner{
+    animation: annimate-2 50s linear 0s infinite backwards;
+}
+.logo-inner{
+    /* background-color: rgb(224, 243, 243); */
+    
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 50%;
+}
+.logo-inner img{
+    margin: 0 auto;
+    width:100%;
+}
+#image1-1 img{
+    transform: scale(8);
+}
+#image2-1 img{
+    transform: scale(1.4);
+}
+#image3-1 img{
+    transform: scale(1.9);
+}
+#image4-1 img{
+    transform: scale(1.9);
+}
+@keyframes annimate-2 {
+    from{
+        transform: 
+        rotate(360deg);
+    }
+}
